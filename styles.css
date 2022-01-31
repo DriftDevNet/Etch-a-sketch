@@ -1,0 +1,206 @@
+/*
+Univeral style
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+  font-size: 2rem;
+}
+
+h1 {
+  font-size: 7rem;
+}
+
+h2 {
+  font-size: 4.5rem;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+
+
+
+
+/*
+main part style
+*/
+
+.section {
+  margin: 10rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.container {
+  margin: 5rem 0 5rem 0;
+  width: 600px;
+  height: 600px;
+  display: grid;
+  z-index: 100;
+}
+
+.section p {
+  margin: 2rem 0;
+}
+
+:root {
+  --primary: #555bff;
+  --secondary: #22d2a0;
+  --background: white;
+  --green: #1fc11b;
+  --yellow: #ffd913;
+  --orange: #ff9c55;
+  --red: #ff5555;
+}
+
+.buttons {
+  margin: 2rem;
+}
+
+
+
+
+
+/*
+Overall button styles
+*/
+
+.btn {
+  font-size: 2rem;
+  padding: 0.5rem 1.5rem;
+  margin: 0 2rem;
+}
+
+.btn {
+  font-family: 'Archivo', sans-serif;
+  color: var(--primary);
+  background-color: var(--background);
+  border: 3px solid var(--primary);
+  position: relative;
+  cursor: pointer;
+}
+
+
+/*
+specific button styles
+*/
+
+.btnBlk {
+  border: 3px solid black;
+  color: black;
+}
+
+.btnGry {
+  border: 3px solid rgb(112, 112, 112);
+  color: rgb(112, 112, 112);
+}
+
+.btnResize {
+  border: 3px solid black;
+}
+
+
+
+/*
+rgb button dynamic styles
+*/
+
+.btnRgb:hover {
+  background-color: var(--primary);
+  color: white;
+}
+
+.btnRgb:focus {
+  background-color: white;
+  color: var(--primary);
+  box-shadow: 5px 5px 0 -3px var(--background), 5px 5px var(--green),
+    10px 10px 0 -3px var(--background), 10px 10px var(--yellow),
+    15px 15px 0 -3px var(--background), 15px 15px var(--orange),
+    20px 20px 0 -3px var(--background), 20px 20px var(--red);
+  transition: box-shadow 0.3s;
+}
+
+.btnRgb:active {
+  color: var(--primary);
+  background-color: var(--background);
+}
+
+
+
+
+/*
+black button dynamic styles
+*/
+
+.btnBlk:hover {
+  background-color: black;
+  color: white;
+}
+
+.btnBlk:focus {
+  background-color: white;
+  color: black;
+  box-shadow: 5px 5px 0 -3px var(--background), 5px 5px black,
+    10px 10px 0 -3px var(--background), 10px 10px black,
+    15px 15px 0 -3px var(--background), 15px 15px black,
+    20px 20px 0 -3px var(--background), 20px 20px black;
+  transition: box-shadow 0.3s;
+}
+
+.btnBlk:active {
+  background-color: black;
+  color: white;
+}
+
+
+
+
+
+
+/*
+gray button dynamic styles
+*/
+
+.btnGry:hover {
+  background-color: rgb(112, 112, 112);
+  color: white;
+}
+
+.btnGry:focus {
+  background-color: white;
+  color: rgb(112, 112, 112);
+  box-shadow: 5px 5px 0 -3px var(--background), 5px 5px rgb(112, 112, 112),
+    10px 10px 0 -3px var(--background), 10px 10px rgb(112, 112, 112),
+    15px 15px 0 -3px var(--background), 15px 15px rgb(112, 112, 112),
+    20px 20px 0 -3px var(--background), 20px 20px rgb(112, 112, 112);
+  transition: box-shadow 0.3s;
+}
+
+.btnGry:active {
+  background-color: rgb(112, 112, 112);
+  color: white;
+}
+
+.btnResize {
+  color: black;
+}
+
+.btnResize:hover {
+  color: white;
+  background-color: black;
+}
